@@ -24,7 +24,22 @@ public class Analyzer {
     }
 
     private void detectSkills() {
-        String[] skills = {"java", "python", "sql", "c++", "javascript", "react", "node.js", "data structures", "algorithms"};
+        String[] skills = {
+            // Programming Languages
+            "java", "python", "sql", "c++", "c#", "rust", "swift", "kotlin", "javascript", "typescript", "php", "ruby", "go", "scala",
+            // Frontend
+            "html", "css", "react", "angular", "vue.js", "tailwind", "bootstrap", "next.js",
+            // Backend & Frameworks
+            "spring boot", "django", "flask", "node.js", "express", "fastapi", "laravel", "ruby on rails",
+            // Databases
+            "mysql", "postgresql", "mongodb", "redis", "nosql", "oracle", "mariadb",
+            // Cloud & DevOps
+            "aws", "azure", "google cloud platform", "docker", "kubernetes", "git", "jenkins", "terraform", "ansible",
+            // Data Science & AI
+            "machine learning", "deep learning", "pandas", "numpy", "pytorch", "tensorflow", "scikit-learn",
+            // General CS
+            "data structures", "algorithms", "rest api", "graphql", "microservices"
+        };
         for (String skill : skills) {
             if (resumeText.contains(skill.toLowerCase())) {
                 skillsFound.add(skill);
